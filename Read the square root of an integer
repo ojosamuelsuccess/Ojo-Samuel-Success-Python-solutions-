@@ -1,0 +1,20 @@
+#code_to_read_and_compute_square_root_of_an_integer
+import math
+
+def find_square_root():
+    try:
+        # Get the integer input from the user
+        number = int(input("Enter an integer: "))
+        
+        if number < 0:
+            print("Square root of a negative number is not real. Please enter a non-negative integer.")
+        else:
+            # Calculate the square root
+            sqrt = math.sqrt(number)
+            print(f"The square root of {number} is {sqrt}")
+    
+    except ValueError:
+        print("Invalid input. Please enter an integer.")
+
+# Run the function
+find_square_root()
